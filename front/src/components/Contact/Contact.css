@@ -1,0 +1,284 @@
+.contactContainer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contact {
+
+    width: 1000px;
+    margin-top: 100px;
+
+
+
+}
+
+.connect {
+    margin-bottom: 30px;
+
+
+}
+
+.connectContainer {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.contentGuide {
+
+    margin-top: 10px;
+    display: flex;
+    gap: 30px;
+
+    padding-left: 50px;
+   
+}
+
+.guideImage {
+    width: 150px;
+    border-radius: 50%;
+    height: 150px;
+
+
+}
+
+.guideAbout {
+    background-color: rgb(249, 252, 255);
+    height: 120px;
+    width: 700px;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 1px 4px 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+.guideName {
+    font-weight: bold;
+
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.headerGuide {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-weight: 10;
+    color: rgb(107, 118, 118);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.svgContact {
+    fill: rgb(76, 86, 92);
+    width: 30px;
+    height: 30px;
+    font-weight: 100;
+    margin-right: 10px;
+
+}
+
+.connectItem {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+
+
+}
+
+.advantageIcon {
+    width: 120px;
+    height: 120px;
+
+}
+
+.advantageIcons {
+
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.advantage {
+    width: 120px;
+
+
+}
+
+.advantageText {
+
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    text-align: center;
+}
+
+@media(max-width:1024px) {
+    .contact {
+        width: 800px;
+
+    }
+
+    .advantageIcon {
+        width: 80px;
+        height: 80px;
+
+
+    }
+
+    .advantage {
+
+        font-size: 14px;
+        width: 80px;
+
+
+    }
+
+    .guideAbout {
+        width: 500px;
+        height: 150px;
+    }
+
+}
+
+@media(max-width:700px) {
+    .contact {
+        width: 800px;
+
+    }
+
+    .advantageIcon {
+        width: 60px;
+        height: 60px;
+
+    }
+
+    .advantage {
+
+        font-size: 10px;
+        width: 60px;
+
+
+    }
+
+    .guideAbout {
+        width: 280px;
+        height: 170px;
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+    .advantageIcons {
+        gap: 30px;
+    }
+
+    .advantageText {
+        gap: 30px;
+
+    }
+
+    .guideImage {
+        width: 90px;
+        border-radius: 50%;
+        height: 90px;
+
+
+
+    }
+
+    .contentGuide {
+
+        padding-left: 20px;
+
+    }
+
+}
+
+
+
+
+
+@media(max-width:420px) {
+    .contact {
+        width: 340px;
+
+    }
+
+    .headerGuide {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .advatageContainer {
+        display: flex;
+    }
+
+    .advantageIcons {
+        display: block;
+     
+        padding-left: 100px;
+    }
+
+    .advantageText {
+        display: block;
+    }
+
+  
+    .advantage {
+        height: 50px;
+
+        width: 100px;
+        margin-top: 0;
+  
+        padding-top: 10px;
+        
+       
+
+
+    }
+    .advantageIcon{   
+        height:60px;
+        margin-bottom: 7px;
+    }
+    .contentGuide{
+        padding-left: 0;
+    }
+    .guideAbout{
+        height: 200px;
+    }
+   .contentGuide{
+    gap: 10px;
+   }
+
+
+}
+
+@media(max-width:340px) {
+    .contact{
+        width: 300px;
+
+    }
+   
+    .guideImage {
+        width: 60px;
+    
+        height: 60px;
+    
+    
+    }
+    .ratingIcon{
+     
+        width: 20px;
+
+    }
+    .guideAbout{
+        height: 210px;
+    }
+}

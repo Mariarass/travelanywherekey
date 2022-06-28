@@ -1,0 +1,169 @@
+.App-container {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    z-index: 100;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 0.1px solid #ebebeb;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+
+
+}
+.select{
+  background-color: #ffffff;
+  border: none;
+  color: #7d5208;
+  outline:none;
+  font-size: 20px;
+
+  
+}
+
+
+.header {
+    width: 1000px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo * {
+    fill: rgb(255, 0, 43);
+    animation: Fill 7s infinite;
+    transform: scale(0.5);
+}
+
+.logoWater * {
+
+    animation: FillWater 7s infinite;
+
+}
+.logoAir * {
+
+    animation: FillAir 7s infinite;
+
+}
+.headerLogo {
+
+    width: 260px;
+    height: 80px;
+
+}
+
+.navBar {
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.navBarItem {
+
+    color: #7d5208;
+    margin-left: 40px;
+    text-decoration: none;
+    font-weight: bolder;
+
+
+}
+.networkItem:hover{
+
+  transform: translateY(-5px);
+
+ }
+
+.land {
+    color: rgb(129, 92, 6);
+    fill:rgb(255, 174, 0);
+}
+.water {
+    color: rgb(31, 23, 75);
+    fill:rgb(31, 23, 75);
+}
+.air {
+    color: rgb(23, 75, 69);
+    fill: rgb(9, 160, 143);
+}
+
+.network {
+    margin-left: 30px;
+}
+
+.networkItem {
+    width: 25px;
+    height: 30px;
+   
+    cursor: pointer;
+    margin-right: 7px;
+    transition: 0.5s;
+}
+
+
+
+.menubar {
+   
+    margin-right: 30px;
+    display:none;
+    cursor: pointer;
+    
+}
+
+@keyframes FillWater {
+    0% {
+      fill: #4646b0;
+    }
+  
+    30% {
+      fill: #5563b6
+    }
+  
+    60% {
+      fill: rgb(83, 100, 195)
+    }
+  
+    90% {
+      fill: #69a1bb;
+    }
+  
+    100% {
+      fill:#4646b0;
+  
+    }
+  }
+  @keyframes FillAir {
+    0% {
+      fill: #46b09d;
+    }
+  
+    30% {
+      fill: #297e91
+    }
+  
+    60% {
+      fill: rgb(115, 188, 187)
+    }
+  
+    90% {
+      fill: #00b8d9;
+    }
+  
+    100% {
+      fill:#46b09d;
+  
+    }
+  }
+
+@media (max-width: 960px) {
+    .networkItem {
+        display: none;
+    }
+
+    .navBar {
+        display: none;
+    }
+    .menubar{
+        display: flex;
+    }
+  }

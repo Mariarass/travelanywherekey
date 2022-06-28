@@ -1,0 +1,65 @@
+.ticket {
+    margin-top: 100px;
+}
+
+.filter {
+
+    display: flex;
+    justify-content: center;
+  
+    
+    gap: 10px;
+}
+
+.button {
+
+    background-color: #fff;
+    border: none;
+
+    margin: 0;
+
+}
+
+.apply {
+    fill: rgb(107, 133, 128);
+    width: 30px;
+    height: 30px;
+
+}
+
+.comboContainer {
+    width: 200px;
+}
+
+.apply:hover {
+    fill: rgb(63, 95, 91);
+    cursor: pointer;
+    transition: 0.5s;
+    transform: scale(1.2);
+
+
+}
+
+@media(max-width:580px) {
+    .comboContainer {
+        width: 150px;
+    }
+}
+
+@media(max-width:480px) {
+    .comboContainer {
+        width: 120px;
+    }
+
+    .apply {
+        width: 20px;
+    }
+
+}
+
+@media(max-width:400px) {
+  
+    .comboContainer {
+        width: 110px;
+    }
+}

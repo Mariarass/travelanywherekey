@@ -1,0 +1,115 @@
+.cardItem {
+    box-shadow: 1px 4px 5px 3px #e6e5e5;
+    width: 300px;
+    border-radius: 5%;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    cursor: pointer;
+    height: 440px;
+}
+
+.cardItem:hover {
+    box-shadow: 1px 4px 5px 3px #c4c3c3;
+}
+
+.cardItemIMG {
+    width: 300px;
+    height: 260px;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    position: absolute;
+}
+
+.tourStatus {
+
+    display: flex;
+    justify-content: start;
+    padding-left: 17px;
+    gap: 5px;
+   
+}
+
+
+.order{
+    opacity: 0;
+    background-color: rgb(0, 0, 0);
+    width: 300px;
+    height: 260px;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    position: absolute;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+
+    text-align: center;
+
+}
+.order:hover{
+    opacity: 0.5;
+}
+.imgContainer{
+   
+    position: relative;
+ 
+    height: 260px;
+}
+.tourStatusHour {
+    margin-top: 4px;
+    font-size: 1em;
+    margin-bottom: 4px;
+}
+
+.tourStatusClock {
+    fill: rgb(155, 155, 155);
+    width: 20px;
+}
+
+.tourHeader {
+    
+    margin-top: 5px;
+    padding-left: 15px;
+    margin-left: 0;
+    color: rgb(73, 73, 73);
+    height: 30px;
+   
+}
+
+.tourPrice {
+    display: flex;
+    justify-content: space-between;
+ 
+    
+   
+}
+.about{
+  
+
+   padding: 10px 10px 20px 20px;
+
+   height: 30px;
+  
+}
+
+.tourPriceDetails {
+    margin: 0;
+    padding-right: 20px;
+    color: rgb(115, 140, 140);
+    font-family: 'Rubik Mono One', sans-serif;
+    font-weight: 5;
+    font-size: 20px;
+
+}
+.ticket{
+
+    height: 30px;
+    width: 30px;
+    margin-left: 20px;
+    fill: rgb(115, 140, 140);
+}
+.link{
+    text-decoration: none;
+    color: rgb(72, 72, 72);
+}

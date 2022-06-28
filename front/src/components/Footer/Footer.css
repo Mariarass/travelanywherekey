@@ -1,0 +1,95 @@
+.footer{
+
+    position: relative;
+  
+  }
+  .landscapeFooter{
+    position: absolute;
+    z-index: 1;
+   
+  }
+
+  .landscapeFooter *{
+   fill: rgb(62, 98, 83);
+   
+  }
+
+  .landscapeFooterWater *{
+    fill: rgb(31, 24, 71);
+    
+  }
+
+  .landscapeFooterAir *{
+    fill: rgb(22, 115, 114);
+  
+  }
+  .descriptionFooter{
+   
+    
+    position: absolute;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 2;
+  
+    width: 100%;
+    margin-top: 130px;
+    gap:100px;
+
+
+  
+  }
+  .AboutFooter{
+  
+    width: 400px;
+    height: 100px;
+ 
+  
+  }
+  
+
+ .footerSvg *{
+
+   fill: white;
+
+ }
+ .footerSvg{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  transition: 0.5s;
+
+ }
+
+ .footerSvg:hover{
+  transform: translateY(-10px);
+ }
+
+ .containerSvg{
+   display: flex;
+
+   align-items: center;
+
+ }
+
+ @media (max-width:1024px) {
+  .descriptionFooter {
+    gap:90px
+  
+    
+  }
+  
+}
+@media (max-width:700px) {
+  .descriptionFooter {
+
+    gap:10px
+    
+    
+  }
+  .AboutFooter{
+    font-size: 10px;
+    width: 150px;
+  }
+}

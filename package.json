@@ -1,0 +1,28 @@
+{
+  "devDependencies": {
+    "concurrently": "^7.2.1",
+    "nodemon": "^2.0.16"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mailtoui": "^1.0.3",
+    "mongoose": "^6.3.4",
+    "r3f-perf": "^6.2.6"
+  },
+  "name": "travelenywherekey",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node back/server.js",
+    "server": "nodemon back/server.js",
+    "client": "npm start --prefix front",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node back/seederScript.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

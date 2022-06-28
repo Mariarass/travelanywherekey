@@ -1,0 +1,10 @@
+.error{
+    
+    margin-top: 200px;
+    height: 200px;
+}
+.errorText{
+    text-align: center;
+    font-family: 'Rubik Mono One', sans-serif;
+    color: rgb(70, 69, 69);
+}
