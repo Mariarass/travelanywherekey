@@ -6,7 +6,7 @@ import './AboutContent.css'
 import { ReactComponent as Map } from '../../../img/Group.svg'
 
 import { ReactComponent as Local } from '../../../img/local.svg'
-import { ReactComponent as Loading } from '../../../img/Loading.svg'
+import { ReactComponent as Close } from '../../../img/close.svg'
 
 
 
@@ -23,7 +23,7 @@ const AboutContent = (props) => {
 
   let changeBlock = (Block) => {
 
-    Block.current.style.display = 'flex'
+    Block.current.style.display = 'block'
 
   }
   let changeBlock2 = (Block) => {
@@ -45,7 +45,7 @@ const AboutContent = (props) => {
 
 
         {Block.map((b, c) =>
-          <div className={`local l${c}`} onMouseOver={() => changeBlock(b)} onMouseLeave={() => changeBlock2(b)}>
+          <div className={`local l${c}`} onClick={() => changeBlock(b)} >
             <Local className='localImg'/>
           </div>)}
 
@@ -55,8 +55,10 @@ const AboutContent = (props) => {
         {props.video.map((v, c) =>
 
           <div className={`blockVideo b${c}`} ref={Block[c]}>
+            <div> <Close  className='videoButton' onClick={() => changeBlock2(Block[c])}/></div>
+            
            
-            <video className='headerVideo' src={v} autoPlay loop muted></video>
+            <div><video className='headerVideo' src={v} autoPlay loop muted></video></div>
           </div>)}
 
       </div>

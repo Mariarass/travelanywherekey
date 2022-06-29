@@ -20,6 +20,7 @@
 }
 .localImg{
   width: 70px;
+  height: 70px;
 }
 .map {
   width: 1200px;
@@ -43,12 +44,33 @@
 
 .local {
   position: absolute;
-  fill: #3e5755;
+  fill: #3c4b47;
   z-index: 2;
   cursor: pointer;
 
 
 }
+.local:hover {
+  transform: scale(1.2);
+
+  fill: #87918a;
+ 
+
+
+}
+.videoButton{
+padding-top: 3px;
+padding-left: 3px;
+  cursor: pointer;
+  width: 20px;
+}
+.videoButton *{
+  fill: #ffffff;
+}
+.videoButton:hover *{
+  fill: #ffffff;
+}
+
 
 .localwater {
   fill: #0a194d;
@@ -98,6 +120,7 @@
   z-index: 3;
   transition: 0.1s ease-in-out;
   animation: show 0.5s 1;
+ 
 
 }
 
@@ -132,8 +155,10 @@
 }
 
 .headerVideo {
-  width: 304px;
+  width: 219px;
   height: 310px;
+
+  margin:0 ;
 }
 
 
