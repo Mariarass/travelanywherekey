@@ -14,6 +14,7 @@ ReactDOM.render(
       <BrowserRouter>
         <Provider store={store}>
           <ScrollToTop/>
+       
           
           <App />
         </Provider>

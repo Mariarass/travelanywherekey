@@ -5,7 +5,7 @@
   align-items: center;
   margin-top: 40px;
   padding-left: 20px;
-
+ 
 
   
 
@@ -149,12 +149,18 @@
 
 
 @media (max-width:335px) {
+
   .Card {
+   
+
       
     padding-left: 0;
     
 
 
+  }
+  .CardContainer{
+    padding-left: 10px;
   }
 
 }

@@ -5,7 +5,10 @@ import React, { createRef } from 'react'
 import './AboutContent.css'
 import { ReactComponent as Map } from '../../../img/Group.svg'
 
-import Local from '../../../img/map.png'
+import { ReactComponent as Local } from '../../../img/local.svg'
+import { ReactComponent as Loading } from '../../../img/Loading.svg'
+
+
 
 
 const AboutContent = (props) => {
@@ -43,7 +46,7 @@ const AboutContent = (props) => {
 
         {Block.map((b, c) =>
           <div className={`local l${c}`} onMouseOver={() => changeBlock(b)} onMouseLeave={() => changeBlock2(b)}>
-            <img className='localImg' src={Local} />
+            <Local className='localImg'/>
           </div>)}
 
 
@@ -52,6 +55,7 @@ const AboutContent = (props) => {
         {props.video.map((v, c) =>
 
           <div className={`blockVideo b${c}`} ref={Block[c]}>
+           
             <video className='headerVideo' src={v} autoPlay loop muted></video>
           </div>)}
 

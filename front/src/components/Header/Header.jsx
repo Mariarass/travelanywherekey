@@ -65,7 +65,7 @@ const Header = (props) => {
             <div className='header'>
 
                 <div className='headerLogo'>
-                    <Logo className={logo.join(' ')} />
+                   <a href='/#'><Logo className={logo.join(' ')} /></a> 
                 </div>
 
                 <nav className='navBar'>

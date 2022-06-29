@@ -43,7 +43,7 @@
 
 .local {
   position: absolute;
-  fill: #cfb862;
+  fill: #3e5755;
   z-index: 2;
   cursor: pointer;
 
@@ -520,4 +520,16 @@
     height:230px;
   }
   
+}
+
+@media (max-width:335px) {
+
+  .headerAbout {
+    font-size:16px;
+    padding-left:140px;
+    
+   
+  }
+
+
 }

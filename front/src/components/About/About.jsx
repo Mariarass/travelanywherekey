@@ -6,10 +6,10 @@ import AboutContent from './AboutContent/AboutContent'
 import { NavLink } from 'react-router-dom';
 import CardTour from '../Tour/CardTour/CardTour';
 import CardTicket from '../Ticket/CardTicket/CardTicket';
-import video1 from '../../img/IMG_5733.MOV'
+import video1 from '../../img/IMG_2095.mp4'
 import video2 from '../../img/lego.mp4'
-import video3 from '../../img/IMG_2022.MP4'
-import video4 from '../../img/IMG_5684.MOV'
+import video3 from '../../img/IMG_2022.mp4'
+import video4 from '../../img/IMG_2088.mp4'
 import video5 from '../../img/museum.mp4'
 
 
@@ -19,7 +19,7 @@ import video8 from '../../img/yacht.mp4'
 import video9 from '../../img/acva.mp4'
 import video10 from '../../img/fly.mp4'
 
-import video11 from '../../img/IMG_2025.MP4'
+import video11 from '../../img/IMG_2025.mp4'
 import video12 from '../../img/parachute.mp4'
 import video13 from '../../img/vertolet.mp4'
 import video14 from '../../img/zip.mp4'
@@ -136,7 +136,7 @@ const About = (props) => {
         <div className='Card'>
           {props.ticket.map(c => {
             if (c.id__ < 7) {
-              return (<CardTicket changeStyle={props.changeStyle}  ticket={c} />)
+              return (<CardTicket whats={props.languages.whats} changeStyle={props.changeStyle}  ticket={c} />)
             }
           })}
         </div>

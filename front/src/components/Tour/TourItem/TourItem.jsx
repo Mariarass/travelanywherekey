@@ -4,9 +4,9 @@ import './TourItems.css'
 import { ReactComponent as Clock } from './../../../img/clocks.svg'
 import { ReactComponent as Car } from './../../../img/car.svg'
 import { ReactComponent as Place } from './../../../img/place.svg'
+import { ReactComponent as Dot } from './../../../img/dot.svg'
 import { NavLink } from 'react-router-dom';
 import write from './../../../img/write.png'
-import Dot from '../../../img/dot.png'
 
 
 
@@ -109,7 +109,7 @@ const TourItem = (props) => {
 
                                     <div className={style.dotContainer}>
                                         <div>
-                                            {arrays.map(a => <img className={style.imgDot} src={Dot} />)}
+                                            {arrays.map(a => <Dot className={style.imgDot} />)}
 
                                         </div>
                                     </div>

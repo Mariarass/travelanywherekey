@@ -6,8 +6,9 @@ import { ReactComponent as Instagram } from './../../img/instagram.svg'
 import { ReactComponent as WhatsApp } from './../../img/whatsapp.svg'
 import { ReactComponent as Email } from './../../img/email.svg'
 import { ReactComponent as Call } from './../../img/call.svg'
+
 import guideYr from '../../img/yur.png'
-import guideDenis from '../../img/guide.JPG'
+import guideDenis from '../../img/guide.jpg'
 import guideAlex from '../../img/alex.jpg'
 import guideOleg from '../../img/oleg.jpg'
 import Advantage from '../../img/way.png'
@@ -91,6 +92,8 @@ const Contact = (props) => {
 
 
                 <h3 className='headerGuide'>{props.languages.guides}</h3>
+
+                
                 <Guide name={props.languages.name1} img={guideYr} rating='4,9'
 
                     about={props.languages.guide1} />

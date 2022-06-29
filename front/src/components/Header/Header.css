@@ -31,7 +31,7 @@
 }
 
 .logo * {
-    fill: rgb(255, 0, 43);
+    
     animation: Fill 7s infinite;
     transform: scale(0.5);
 }
@@ -166,4 +166,16 @@
     .menubar{
         display: flex;
     }
+  }
+  @media (max-width:380px) {
+    .headerLogo {
+
+      width: 160px;
+      height: 80px;
+  
+  }
+  .logo {
+    width: 70px;
+    height: 80px;
+  }
   }
