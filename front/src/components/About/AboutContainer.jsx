@@ -12,12 +12,12 @@ class AboutContainers extends React.Component {
 
 
         if (this.props.language === 'ru') {
-            axios.get(`http://www.travelanywherekey.com:8000/api/card/`).then(response => {
+            axios.get(`http://www.travelanywherekey.com:5000/api/card/`).then(response => {
 
                 this.props.setCard(response.data)
             })
 
-            axios.get(`http://www.travelanywherekey.com:8000/api/tour/`).then(response => {
+            axios.get(`http://www.travelanywherekey.com:5000/api/tour/`).then(response => {
 
                 this.props.setTicket(response.data)
             })
@@ -27,12 +27,12 @@ class AboutContainers extends React.Component {
         }
 
         if (this.props.language === 'en') {
-            axios.get(`http://www.travelanywherekey.com:8000/api/cardEng/`).then(response => {
+            axios.get(`http://www.travelanywherekey.com:5000/api/cardEng/`).then(response => {
 
                 this.props.setCard(response.data)
             })
 
-            axios.get(`http://www.travelanywherekey.com:8000/api/tourEng/`).then(response => {
+            axios.get(`http://www.travelanywherekey.com:5000/api/tourEng/`).then(response => {
 
                 this.props.setTicket(response.data)
             })
@@ -62,12 +62,12 @@ class AboutContainers extends React.Component {
     changeLanguage = (language) => {
    
         if (language === 'ru') {
-            axios.get(`http://www.travelanywherekey.com:8000/api/card/`).then(response => {
+            axios.get(`http://www.travelanywherekey.com:5000/api/card/`).then(response => {
 
                 this.props.setCard(response.data)
             })
 
-            axios.get(`http://www.travelanywherekey.com:8000/api/tour/`).then(response => {
+            axios.get(`http://www.travelanywherekey.com:5000/api/tour/`).then(response => {
 
                 this.props.setTicket(response.data)
             })
@@ -76,12 +76,12 @@ class AboutContainers extends React.Component {
         }
 
         if (language === 'en') {
-            axios.get(`http://www.travelanywherekey.com:8000/api/cardEng/`).then(response => {
+            axios.get(`http://www.travelanywherekey.com:5000/api/cardEng/`).then(response => {
 
                 this.props.setCard(response.data)
             })
 
-            axios.get(`http://www.travelanywherekey.com:8000/api/tourEng/`).then(response => {
+            axios.get(`http://www.travelanywherekey.com:5000/api/tourEng/`).then(response => {
 
                 this.props.setTicket(response.data)
             })

@@ -9,13 +9,13 @@ class TicketContainers extends React.Component {
     componentDidMount() {
 
         if (this.props.language === 'ru') {
-        axios.get(`http://www.travelanywherekey.com:8000/api/tour/`).then(response => {
+        axios.get(`http://www.travelanywherekey.com:5000/api/tour/`).then(response => {
 
             this.props.setTicket(response.data)
             
         })}
         if (this.props.language === 'en') {
-            axios.get(`http://www.travelanywherekey.com:8000/api/tourEng/`).then(response => {
+            axios.get(`http://www.travelanywherekey.com:5000/api/tourEng/`).then(response => {
     
                 this.props.setTicket(response.data)
                 
@@ -27,13 +27,13 @@ class TicketContainers extends React.Component {
     changeLanguage=()=>{
 
         if (this.props.language === 'ru') {
-        axios.get(`http://www.travelanywherekey.com:8000/api/tour/`).then(response => {
+        axios.get(`http://www.travelanywherekey.com:5000/api/tour/`).then(response => {
 
             this.props.setTicket(response.data)
             
         })}
         if (this.props.language === 'en') {
-            axios.get(`http://www.travelanywherekey.com:8000/api/tourEng/`).then(response => {
+            axios.get(`http://www.travelanywherekey.com:5000/api/tourEng/`).then(response => {
     
                 this.props.setTicket(response.data)
                 
@@ -49,13 +49,13 @@ class TicketContainers extends React.Component {
     changeTicket = (city,where) => {
         
         if (this.props.language === 'ru') {
-        axios.get(`http://www.travelanywherekey.com:8000/api/tour?city=${city}&where=${where}`).then(response => {
+        axios.get(`http://www.travelanywherekey.com:5000/api/tour?city=${city}&where=${where}`).then(response => {
      
         this.props.setTicket(response.data)
         })}
 
         if (this.props.language === 'en') {
-            axios.get(`http://www.travelanywherekey.com:8000/api/tourEng?city=${city}&where=${where}`).then(response => {
+            axios.get(`http://www.travelanywherekey.com:5000/api/tourEng?city=${city}&where=${where}`).then(response => {
          
             this.props.setTicket(response.data)
             })}

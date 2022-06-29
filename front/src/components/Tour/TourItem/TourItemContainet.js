@@ -19,7 +19,7 @@ class TourItemContainers extends React.Component {
 
 
         if (this.props.language === 'ru') {
-            axios.get(`http://www.travelanywherekey.com:8000/api/card/${Id}`)
+            axios.get(`http://www.travelanywherekey.com:5000/api/card/${Id}`)
                 .then(response => {
                     console.log(response)
 
@@ -28,7 +28,7 @@ class TourItemContainers extends React.Component {
                 })
         }
         if (this.props.language === 'en') {
-            axios.get(`http://www.travelanywherekey.com:8000/api/cardEng/${Id}`)
+            axios.get(`http://www.travelanywherekey.com:5000/api/cardEng/${Id}`)
                 .then(response => {
 
                     this.props.setTour(response.data)
@@ -52,7 +52,7 @@ class TourItemContainers extends React.Component {
 
 
         if (this.props.language === 'ru') {
-            axios.get(`http://www.travelanywherekey.com:8000/api/card/${Id}`)
+            axios.get(`http://www.travelanywherekey.com:5000/api/card/${Id}`)
                 .then(response => {
 
                     this.props.setTour(response.data)
@@ -60,7 +60,7 @@ class TourItemContainers extends React.Component {
                 })
         }
         if (this.props.language === 'en') {
-            axios.get(`http://www.travelanywherekey.com:8000/api/cardEng/${Id}`)
+            axios.get(`http://www.travelanywherekey.com:5000/api/cardEng/${Id}`)
                 .then(response => {
 
                     this.props.setTour(response.data)

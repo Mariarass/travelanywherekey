@@ -13,7 +13,7 @@ class TourContainers extends React.Component {
     componentDidMount() {
 
         if (this.props.language === 'ru') {
-            axios.get(`http://www.travelanywherekey.com:8000/api/card/`)
+            axios.get(`http://www.travelanywherekey.com:5000/api/card/`)
                 .then(response => {
 
                     this.props.setCard(response.data)
@@ -21,7 +21,7 @@ class TourContainers extends React.Component {
         }
 
         if (this.props.language === 'en') {
-            axios.get(`http://www.travelanywherekey.com:8000/api/cardEng/`)
+            axios.get(`http://www.travelanywherekey.com:5000/api/cardEng/`)
                 .then(response => {
 
                     this.props.setCard(response.data)
@@ -35,7 +35,7 @@ class TourContainers extends React.Component {
         console.log(this.props.language )
 
         if (this.props.language === 'ru') {
-            axios.get(`http://www.travelanywherekey.com:8000/api/card/`)
+            axios.get(`http://www.travelanywherekey.com:5000/api/card/`)
                 .then(response => {
 
                     this.props.setCard(response.data)
@@ -43,7 +43,7 @@ class TourContainers extends React.Component {
         }
 
         if (this.props.language === 'en') {
-            axios.get(`http://www.travelanywherekey.com:8000/api/cardEng/`)
+            axios.get(`http://www.travelanywherekey.com:5000/api/cardEng/`)
                 .then(response => {
 
                     this.props.setCard(response.data)
